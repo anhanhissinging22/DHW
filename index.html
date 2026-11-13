@@ -2465,7 +2465,7 @@
       $$("[data-close]").forEach(
         (b) => (b.onclick = () => closeModal(b.dataset.close)),
       );
-      $(".modal").forEach((m) =>
+      $$(".modal").forEach((m) =>
         m.addEventListener("click", (e) => {
           if (e.target === m) closeModal(m.id);
         }),
